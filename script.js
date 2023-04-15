@@ -8,10 +8,24 @@ let arr = [
 
 function PrintDeveloperbyMap() {
   //Write your code here , just console.log
+  arr.map(printIfDeveloperMap)
+  function printIfDeveloperMap(employee){
+    if(employee.profession === "developer"){
+      console.log(employee)
+    }
+  }
 }
 
 function PrintDeveloperbyForEach() {
   //Write your code here , just console.log
+
+  arr.forEach(printIfDeveloperForEach)
+
+  function printIfDeveloperForEach(employee){
+    if(employee.profession === "developer"){
+      console.log(employee)
+    }
+  }
 }
 
 function addData() {
